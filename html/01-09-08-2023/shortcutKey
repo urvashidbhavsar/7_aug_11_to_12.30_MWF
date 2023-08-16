@@ -1,0 +1,9 @@
+copy : ctrl + c 
+cut : ctrl + x 
+paste : ctrl + v 
+find  : ctrl + f 
+select all : ctrl + a 
+save : ctrl + s 
+undo : ctrl + z 
+redu : ctrl + y 
+new file : ctrl + n
