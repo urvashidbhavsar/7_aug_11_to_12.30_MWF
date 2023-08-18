@@ -1,0 +1,7 @@
+apply link on some image shape / portion .
+
+tags are used : 
+<img>
+<map> and <area> 
+
+shapes : rect, circle and poly
