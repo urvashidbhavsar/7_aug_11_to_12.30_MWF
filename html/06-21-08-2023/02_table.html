@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- use <table> tag to create table 
+        to create row => <tr> tag  => table row 
+        to create column => <td> tag    => table data 
+        to create column with bold heading => <th> tag => table heading 
+        to give table title => <caption> tag 
+        tbody => table body
+        horizontally line => row 
+        vertically => column
+
+        to generate box which is called cell. which is generate form combination of row and column.
+        cellpadding => give a space between cell-border and content 
+        cellspacing => give a space between 2 cells
+
+        when we apply rules all cell spacing does not work
+     -->
+     <table border="1" style="width: 300px;" cellpadding="5px" cellspacing="5px" rules="all">
+        <caption>My Table Data</caption>
+        <!-- 1st row -->
+        <tr>
+            <th>No.</th>
+            <th>full name</th>
+            <th>position</th>
+            <th>salary</th>
+        </tr>
+        <!-- 2nd row -->
+        <tbody id="mytable">
+        <tr>
+            <td>1</td>
+            <td>Rohan</td>
+            <td>Management</td>
+            <td>30000</td>
+        </tr>
+        <!-- 3rd row -->
+        <tr>
+            <td>2</td>
+            <td>Priya</td>
+            <td>Seller</td>
+            <td>30000</td>
+        </tr>
+        <!-- 4th row -->
+        <tr>
+            <td>3</td>
+            <td>Divyesh</td>
+            <td>Employee</td>
+            <td>20000</td>
+        </tr>
+        <!-- 5th row -->
+        <tr>
+            <td>4</td>
+            <td>Suraj</td>
+            <td>Management</td>
+            <td>40000</td>
+        </tr>
+        </tbody>
+     </table>
+</body>
+</html>
