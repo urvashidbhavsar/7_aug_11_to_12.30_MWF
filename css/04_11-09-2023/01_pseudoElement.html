@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::after {
+            content: "\2734";
+        }
+
+        h1::before {
+            content: "\2734";
+        }
+
+        input::placeholder {
+            font-size: 10px;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        .mydiv {
+            height: auto;
+            /* width: 360px; */
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        .mydiv::first-letter {
+            font-size: 30px;
+            color: darkblue;
+        }
+
+        .mydiv::first-line {
+            color: red;
+        }
+
+        .mydiv::selection {
+            background-color: black;
+            color: white;
+        }
+
+        li::marker {
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pseudo element written behind/after any element, class or id
+        start with double colon (::) symbol.
+    -->
+
+    <h1>Hello User</h1>
+    <input type="text" placeholder="Enter name"> <br><br>
+    <div class="mydiv">
+        &#10040; Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim aut earum ut deserunt odit
+        exercitationem animi.
+        Eum reiciendis minus facilis quisquam, illum ut ipsa officiis? Consequatur tempore officiis culpa saepe.
+    </div>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .link1:link {
+            color: black;
+        }
+
+        .link2:visited {
+            color: green;
+        }
+
+        .link3:active {
+            color: darkcyan;
+        }
+
+        .link4:hover {
+            color: chocolate;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            border: 1px solid blue;
+        }
+
+        button:hover {
+            background-color: white;
+            color: blue
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        tr:last-child {
+            color: blue
+        }
+
+        tr:first-child {
+            color: gray !important;
+        }
+
+        tr:nth-child(1) {
+            background-color: blueviolet !important;
+            color: white;
+        }
+
+        tr:nth-child(odd) {
+            background-color: brown;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pseudo class written behind/after any element, class or id
+            start with single colon (:) symbol.
+    -->
+
+    <a href="#" class="link1">Click Here</a>
+    <a href="#" class="link2">Click Here</a>
+    <a href="#" class="link3">Click Here</a>
+    <a href="#" class="link4">Click Here</a>
+    <button>Click here</button>
+
+    <br><br>
+    <table border="1">
+        <tr>
+            <td>NO</td>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Mobile No</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Tejas</td>
+            <td>Surat</td>
+            <td>9887454545</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Tejas</td>
+            <td>Surat</td>
+            <td>9887454545</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Tejas</td>
+            <td>Surat</td>
+            <td>9887454545</td>
+        </tr>
+    </table>
+    <br>
+    <input type="text" name="" id="" placeholder="Enter value">
+</body>
+
+</html>
