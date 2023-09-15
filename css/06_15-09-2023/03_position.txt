@@ -1,0 +1,12 @@
+position means how to positionate your element in webpage.
+
+when we apply position then any element can removed them place.
+
+position : static (default)
+position : fixed 
+position : sticky 
+position : relative (parent)
+position : absolute (child)
+
+some properties are only used with position : 
+(1) top (2) bottom (3) left (4) right (5) z-index
