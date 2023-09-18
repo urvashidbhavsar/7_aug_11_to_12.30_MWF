@@ -1,0 +1,32 @@
+display means how to display your content on webpage.
+
+display : none 
+display : inline 
+display : inline-block 
+display : block (default)
+display : flex 
+display : grid 
+display : table 
+display : inline-table 
+
+=> properties to use only with when we apply display flex : 
+(1) jusfity-content (parent)
+(2) align-items(parent)
+(3) flex [flex-grow,flex-shrink,flex-basis] (child)
+(4)flex-flow[flex-direction, flex-wrap] (parent)
+(5) gap[row-gap, column-gap] (parent)
+(6) align-self (child) 
+(7) jusfity-self (child)
+(8) order (child)
+
+=> properties to use only with when we apply display grid : 
+(1) jusfity-items (parent)
+(2) align-content(parent)
+(3) grid-template-rows (parent)
+(4) grid-template-columns (parent)
+(5) grid-row [grid-row-start, grid-row-end] (child)
+(6) grid-column [grid-column-start, grid-column-end] (child)
+(7) align-self (child) 
+(8) jusfity-self (child)
+(9) gap[row-gap, column-gap] (parent)
+(10) place-content (parent) 

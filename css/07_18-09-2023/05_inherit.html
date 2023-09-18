@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: auto;
+            width: 300px;
+            background-color: coral;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .main>.sub {
+            height: inherit;
+            width: inherit;
+            border: inherit;
+            background-color: inherit;
+            padding: inherit;
+            margin: inherit;
+        }
+
+        .sub>.inner {
+            height: inherit;
+            width: inherit;
+            border: inherit;
+            background-color: inherit;
+            padding: inherit;
+            margin: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente ea tempore voluptates minus quos natus
+        excepturi rem vel? Molestias suscipit esse voluptatem doloremque magnam porro ducimus autem dolores assumenda
+        qui.
+        <div class="sub">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur dignissimos, reiciendis voluptatum
+            praesentium commodi, modi natus doloremque eveniet dolorum laboriosam exercitationem. Recusandae nesciunt
+            adipisci dolores, vitae quae quo voluptatum modi.
+            <div class="inner">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quaerat libero impedit reiciendis?
+                Reprehenderit, nihil quia similique nesciunt aliquam fugit ut, atque doloremque dolores sunt id, facere
+                qui consequuntur molestiae.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
