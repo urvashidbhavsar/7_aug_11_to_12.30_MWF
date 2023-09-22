@@ -1,0 +1,14 @@
+effect as horizontally
+justify-items           = display :grid  
+justify-content         = display : flex 
+justify-self            = display : grid (apply in child class)
+
+effect in vertically 
+align-items             = display : flex 
+align-content           = display : flex, work with flex-wrap 
+align-self              = display : grid / flex (apply in child class)
+
+place-items             = apply with flex 
+place-content           = apply with grid 
+place-self              = 
+it is shorthand of align-self and justify-self. if we apply in display:flex it is only work align-self 
