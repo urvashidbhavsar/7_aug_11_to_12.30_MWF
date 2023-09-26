@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+            margin: 10px;
+        }
+
+        div:hover {
+            width: 250px;
+        }
+
+        .div1 {
+            /* transition means smooth move */
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-property: all;
+            /* transition-delay: 2s; */
+        }
+
+        .div2 {
+            transition: 1s ease-in all;
+        }
+
+        .div3 {
+            transition: 1s all ease-out;
+        }
+
+        .div4 {
+            transition: 1s all ease-in-out;
+        }
+
+        .div5 {
+            transition: 1s all linear;
+        }
+
+        .div6 {
+            transition: 1s all cubic-bezier(0, 0.36, 1, -0.37);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">Div 1</div>
+    <div class="div2">Div 2</div>
+    <div class="div3">Div 3</div>
+    <div class="div4">Div 4</div>
+    <div class="div5">Div 5</div>
+    <div class="div6">Div 6</div>
+</body>
+
+</html>
