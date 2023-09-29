@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cube {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 150px auto;
+            perspective: 200px;
+            /* x and y */
+            perspective-origin: 470px 300px;
+        }
+
+        .show {
+            transform: translateZ(-100px);
+            height: 200px;
+            width: 200px;
+            transform-style: preserve-3d;
+            position: relative;
+            color: white;
+        }
+
+        .front {
+            background-color: rgba(0, 0, 255, 0.515);
+            transform: rotateY(0deg) translateZ(100px);
+        }
+
+        .back {
+            background-color: rgba(255, 145, 0, 0.515);
+            transform: rotateY(0deg) translateZ(-100px);
+        }
+
+        .top {
+            background-color: rgba(190, 6, 172, 0.515);
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .bottom {
+            background-color: rgba(6, 147, 190, 0.515);
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        .left {
+            background-color: rgba(190, 6, 52, 0.515);
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .right {
+            background-color: rgba(40, 6, 190, 0.515);
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .front,
+        .back,
+        .top,
+        .bottom,
+        .left,
+        .right {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            position: absolute;
+            display: grid;
+            place-content: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cube">
+        <div class="show">
+            <div class="front">front</div>
+            <div class="back">back</div>
+            <div class="top">Top</div>
+            <div class="bottom">Bottom</div>
+            <div class="left">left</div>
+            <div class="right">right</div>
+        </div>
+    </div>
+</body>
+
+</html>

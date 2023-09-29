@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: moveDiv;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: backwards;
+            /* fill-mode:backwards depend on delay and direction(reverse) */
+        }
+
+        /* create an animation */
+        @keyframes moveDiv {
+            from {
+                margin-left: 0;
+            }
+
+            to {
+                margin-left: 700px;
+                transform: rotate(360deg);
+                background-color: darkcyan;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+</body>
+
+</html>
