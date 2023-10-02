@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: teal;
+        }
+
+        .videoplay {
+            margin: 200px auto;
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            display: grid;
+            place-content: center;
+            border-radius: 50%;
+            animation: ripple 3s linear infinite;
+        }
+
+        .videoplay i {
+            font-size: 30px;
+            color: teal;
+        }
+
+        @keyframes ripple {
+            0% {
+                box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.8), 0px 0px 0px 10px rgba(255, 255, 255, 0.571), 0px 0px 0px 20px rgba(255, 255, 255, 0.385);
+            }
+
+            100% {
+                box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.648), 0px 0px 0px 20px rgba(255, 255, 255, 0.314), 0px 0px 0px 40px rgba(255, 255, 255, 0.088);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="videoplay">
+        <i class='bx bxs-right-arrow'></i>
+    </div>
+</body>
+
+</html>
