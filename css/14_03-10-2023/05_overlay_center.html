@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            height: 300px;
+            width: 400px;
+        }
+
+        .overlay {
+            height: 300px;
+            width: 400px;
+            border: 2px solid black;
+            margin: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay .text {
+            position: absolute;
+            /* top: 0; */
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.511);
+            display: grid;
+            place-content: center;
+            height: 100%;
+            width: 100%;
+            transition: 1s ease all;
+            transform: scale(0);
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .overlay:hover .text {
+            transform: scale(1) rotate(360deg);
+            border-radius: 0;
+        }
+
+        .overlay .textover {
+            transition: 1s ease all;
+            transition-delay: 1s;
+            /* transform: scale(0); */
+            /* transform: rotateX(90deg); */
+            transform: translateY(200px);
+        }
+
+        .overlay:hover .textover {
+            /* transform: scale(1); */
+            /* transform: rotateX(0); */
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <div>
+            <img src="img1.jpg" alt="">
+        </div>
+        <div class="text">
+            <div class="textover">
+                <h1>Image Overlay</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
