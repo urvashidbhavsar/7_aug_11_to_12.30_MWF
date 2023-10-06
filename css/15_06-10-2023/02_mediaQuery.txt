@@ -1,0 +1,13 @@
+make a website responsive. 
+
+max = some max range 
+min = not in fixed range 
+
+breakpoints 
+
+max-width:576px                        mobile device
+min-width:576px                        large mobile device 
+min-width:768px                        tablet device 
+min-width:992px                        small screen leptop  
+min-width:1140 / 1200px                normal screen 
+min-width:1400px                       extra extra large screen  
