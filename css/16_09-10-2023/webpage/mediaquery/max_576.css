@@ -1,0 +1,11 @@
+@media (max-width:576px) {
+    .container{
+        margin:0px 15px;
+    }
+    header .navbar .nav-bar{
+        display: none;
+    }
+    header .navbar .bars .menubar{
+        display: block;
+    }
+}
