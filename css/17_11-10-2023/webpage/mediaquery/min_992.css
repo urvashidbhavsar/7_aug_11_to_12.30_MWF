@@ -1,0 +1,13 @@
+@media (min-width:992px) {
+    .container{
+        margin:0px 65px;
+    }
+      /* ============================= */
+    .homepage .homep{
+        padding: 170px 0px;
+    }
+     /* ================= */
+    .learnSec .learnBox{
+        flex-direction: row;
+    }
+}

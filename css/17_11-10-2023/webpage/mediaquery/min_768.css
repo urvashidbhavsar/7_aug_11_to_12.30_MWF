@@ -1,0 +1,10 @@
+@media (min-width:768px) {
+    .container{
+        margin:0px 50px;
+    }
+    /* header element inherit from min width 576px  */
+
+    /* homepage inherit padding value */
+
+    /* learn sec inherit values */
+}

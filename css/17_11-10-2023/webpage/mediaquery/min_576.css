@@ -1,0 +1,19 @@
+@media (min-width:576px) {
+    .container{
+        margin:0px 35px;
+    }
+    header .navbar .nav-bar{
+        display: none;
+    }
+    header .navbar .bars .menubar{
+        display: block;
+    }
+     /* ============================= */
+    .homepage .homep{
+        padding: 140px 0px;
+    }
+     /* ================= */
+    .learnSec .learnBox{
+        flex-direction: column;
+    }
+}
