@@ -1,0 +1,40 @@
+@media (min-width:576px) {
+    .container{
+        margin:0px 35px;
+    }
+    header .navbar .nav-bar{
+        display: none;
+    }
+    header .navbar .bars .menubar{
+        display: block;
+    }
+     /* ============================= */
+    .homepage .homep{
+        padding: 140px 0px;
+    }
+     /* ================= */
+    .learnSec .learnBox{
+        flex-direction: column;
+    }
+    /* ======================================  */
+    .courseSec .courseGrid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .courseSec .gridbox3{
+        grid-row: 2;
+        grid-column: 1 / span 2;
+        width: 295px;
+        justify-self: center;
+    }
+     /* ======================================= */
+    .featureSec .featureFlex{
+        display: flex;
+      flex-direction: column;
+    }
+    .featureSec .featureFlex img{
+        border-radius: 0;
+    }
+    .featureFlex .featureGrid .gridbox .gridText h4{
+        font-size: 20px;
+    }
+}

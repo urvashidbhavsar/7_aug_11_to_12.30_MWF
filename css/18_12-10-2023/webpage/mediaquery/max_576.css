@@ -1,0 +1,50 @@
+@media (max-width:576px) {
+    .container{
+        margin:0px 15px;
+    }
+     .title h1{
+        font-size: 30px;
+    }
+      .title h5{
+        font-size: 18px;
+    }
+    /* ================= */
+    header .navbar .nav-bar{
+        display: none;
+    }
+    header .navbar .bars .menubar{
+        display: block;
+    }
+    /* ============================= */
+    .homepage .hometext h1{
+        font-size: 40px;
+    }
+    .homepage .homep{
+        padding: 100px 0px;
+    }
+    /* ================= */
+    .learnSec .learnBox{
+        flex-direction: column;
+    }
+    .learnSec .learnBox .learnBoxLeft h1{
+        font-size: 30px;
+    }
+    .learnSec .learnBox .learnBoxLeft .learnDesign{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* ======================================  */
+    .courseSec .courseGrid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* ======================================= */
+    .featureSec .featureFlex{
+        display: flex;
+      flex-direction: column;
+    }
+    .featureSec .featureFlex img{
+        border-radius: 0;
+    }
+    .featureFlex .featureGrid .gridbox .gridText h4{
+        font-size: 20px;
+    }
+}
