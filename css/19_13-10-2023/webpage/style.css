@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu",sans-serif;
+}
+/* === common css == */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    margin:0px 80px;
+}
+.btnmagenta{
+    height: 45px;
+    padding: 0px 25px;
+    background-color: #f50537;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.btnmagenta:hover{
+    background-color: #00c16e;
+}
+ .title{
+    text-align: center;
+}
+ .title h5{
+    font-size: 22px;
+    padding-bottom: 20px;
+    color: #f50537;
+}
+ .title h1{
+    font-size: 40px;
+    color: black;
+}
+/* =========== header =============  */
+header{
+    background-color: rgba(0, 0, 0, 0.259);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 111;
+    /* filter: blur(10px); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 2px 5px 0px black;
+}
+header .headerp{
+    padding: 15px 0px;
+}
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navbar .logo h1{
+    color: white;
+}
+header .navbar .nav{
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+header .navbar .nav-bar{
+    display: flex;
+    gap:30px;
+    align-items: center;
+}
+header .navbar .nav-bar ul{
+    display: flex;
+    gap:24px;
+    align-items: center;
+}
+header .navbar .nav-bar ul li{
+    padding: 5px;
+}
+header .navbar .nav-bar ul li a{
+    color: white;
+    transition: 0.5s ease all;
+}
+header .navbar .nav-bar ul li span{
+    color: white;
+    font-size: 12px;
+    transition: 0.5s ease all;
+}
+header .navbar .nav-bar ul li a.active{
+    color: #f50537;
+}
+header .navbar .nav-bar ul li a:hover{
+    color: #f50537;
+}
+header .navbar .nav-bar ul li:hover span{
+    color: #f50537;
+}
+header .navbar .nav-bar .search{
+    display: flex;
+    align-items: center;
+}
+header .navbar .nav-bar .search input[type="text"]{
+    height: 40px;
+    width: 185px;
+    padding: 0px 8px;
+    border-radius: 40px 0 0 40px;
+    border: none;
+}
+header .navbar .nav-bar .search input[type="text"]::placeholder{
+    font-size: 15px;
+}
+header .navbar .nav-bar .search input[type="text"]:focus-within{
+    outline: none;
+}
+header .navbar .nav-bar .search button{
+    height : 40px;
+    width: 40px;
+    color :white;
+    background-color: #f50537;
+    border:none;
+    border-radius: 0 40px 40px 0;
+}
+header .navbar .bars{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+header .navbar .bars span{
+    color: white;
+    font-size: 20px;
+}
+header .navbar .bars .menubar{
+    display: none;
+}
+header .navbar .bars button{
+    height: 40px;
+    width: 40px;
+    color :white;
+    background-color: #f50537;
+    border:none;
+}
+/* =================================================================== */
+.homepage{
+    background: url(images/banner1.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    /* filter: brightness(50%); */
+}
+.homepage::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.448);
+    z-index: -1;
+}
+.homepage .homep{
+    padding: 170px 0px;
+}
+.homepage .hometext{
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+    padding: 20px;
+    text-align: center;
+}
+.homepage .hometext p,h1{
+    color: white;
+}
+.homepage .hometext h1{
+    font-size: 67px;
+}
+.homepage .hometext .tophead{
+    font-size: 29px;
+}
+.homepage .hometext .bottomhead{
+    font-size: 20px;
+}
+/* =================================================== */
+.learnSec .learnp{
+    padding: 60px 0px;
+}
+.learnSec .learnBox{
+    display: flex;
+    gap: 30px;
+}
+.learnSec .learnBox .learnBoxLeft{
+    padding: 20px;
+    flex: 1;
+}
+.learnSec .learnBox .learnBoxLeft h1{
+    color: black;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.learnSec .learnBox .learnBoxLeft p{
+    color: gray;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+.learnSec .learnBox .learnBoxLeft .learnDesign{
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.learnSec .learnBox .learnBoxLeft .learnDesign .icon{
+    height:70px;
+    width: 70px;
+    font-size: 38px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    color: white;
+    background-color: #f50537;
+}
+.learnSec .learnBox .learnBoxLeft .learnDesign .text{
+    padding: 20px 0px;
+}
+.learnSec .learnBox .learnBoxLeft .learnDesign h5{
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+.learnSec .learnBox .learnBoxRight{
+    flex: 1.5;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.learnSec .learnBox .learnBoxRight img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 20px;
+}
+/* =================================================================== */
+.courseSec .coursep{
+    padding: 60px 0px;
+}
+.courseSec .view{
+    text-align: center;
+}
+.courseSec .courseGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    padding: 40px 0px;
+    /* justify-items: center; */
+}
+.courseSec .courseGrid .gridbox{
+    border: 1px solid #d1cfcf;
+    border-radius: 10px;
+}
+.courseSec .courseGrid .gridbox .courimg{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    height: fit-content;
+}
+.courseSec .courseGrid .gridbox .courimg .imglabel{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    gap: 7px;
+}
+.courseSec .courseGrid .gridbox .courimg .imglabel div{
+ padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+}
+.courseSec .courseGrid .gridbox .courimg .imglabel .begin{
+    background-color: #00c16e;
+}
+.courseSec .courseGrid .gridbox .courimg .imglabel .new{
+    background-color: #f50537;
+}
+.courseSec .courseGrid .gridbox img{
+    height: auto;
+    max-width: 100%;
+    transition: 0.5s ease-in-out all;
+    border-radius: 10px 10px 0 0;
+    vertical-align: middle;
+}
+.courseSec .courseGrid .gridbox:hover img{
+    transform: scale(1.1);
+}
+.courseSec .courseGrid .gridbox .courText{
+    padding: 20px;
+}
+.courseSec .courseGrid .gridbox .courText .price_rt{
+    display: flex;
+    justify-content: space-between;
+}
+.courseSec .courseGrid .gridbox .courText .price_rt .price{
+    font-size: 20px;
+    color: #f50537;
+}
+.courseSec .courseGrid .gridbox .courText .price_rt .ratt{
+    display: flex;
+    gap: 4px;
+    color: rgb(224, 200, 64);
+}
+.courseSec .courseGrid .gridbox .courText h3{
+    padding: 25px 0px;
+}
+.courseSec .courseGrid .gridbox .courText h3 a{
+    color :black;
+    font-size: 22px;
+    transition: 0.5s ease all;
+}
+.courseSec .courseGrid .gridbox .courText h3 a:hover{
+    color :#f50537;
+}
+.courseSec .courseGrid .gridbox .courText .enroll span{
+    color: #f50537;
+}
+/* =================================================  */
+.featureSec .featurep{
+    padding: 60px 0px;
+}
+.featureSec .featureFlex{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.featureSec .featureFlex img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+.featureSec .featureFlex .feature2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.featureFlex .title{
+    text-align: left !important;
+}
+.featureFlex .title p{
+    padding-top: 20px;
+    color :gray;
+}
+.featureFlex .featureGrid{
+    display: grid;
+    gap: 50px;
+    padding: 30px 0px;
+}
+.featureFlex .featureGrid .gridbox{
+    display: flex;
+    gap : 15px
+}
+.featureFlex .featureGrid .gridbox .icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    background-color: #f50537;
+}
+.featureFlex .featureGrid .gridbox .icon span{
+    color: white;
+    font-size: 25px;
+}
+.featureFlex .featureGrid .gridbox .gridText h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.featureFlex .featureGrid .gridbox .gridText p{
+   color: gray;
+}
+/* ================================================== */
+.chefSec .chefp{
+    padding: 60px 0px;
+}
+.chefSec .chefDetails{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding-top: 30px;
+}
+.chefSec .chefDetails img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+.chefSec .chefDetails .imageOverlay{
+    position: relative;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 20px;
+}
+.chefSec .chefDetails .imageOverlay .chefinfo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    transition: 0.5s ease all;
+    border-radius: 20px 0 20px 20px;
+}
+.chefSec .chefDetails .imageOverlay svg{
+    position: absolute;
+    bottom: 99%;
+    height: 80px;
+    width: 80px;
+    right: 0;
+}
+.chefSec .chefDetails .imageOverlay  path{
+        fill: white;
+        d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+.chefSec .chefDetails .imageOverlay .chefinfo h3{
+    padding-bottom: 10px;
+}
+.chefSec .chefDetails .imageOverlay .chefinfo p{
+    color: gray;
+    padding-bottom: 24px;
+}
+.chefSec .chefDetails .imageOverlay:hover .chefinfo{
+    height: 35%;
+}
+.chefSec .chefDetails .imageOverlay .info{
+   height: 100%;
+    overflow: hidden;
+}
+/* ==================================  */
+.cookReg{
+    background: url(images/bg3.jpg) center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.cookReg::after{
+    content: "";
+    position: absolute;
+    top :0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+.cookReg .cookp{
+    padding: 100px 0px;
+}
+.cookReg .cookinfo{
+    display: flex;
+}
+.cookReg .cookinfo .cookdetails{
+    flex: 1;
+    padding: 20px;
+}
+.cookReg .cookinfo .cookdetails h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.cookReg .cookinfo .cookdetails p{
+    font-size: 18px;
+    color: white;
+    padding-bottom: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 27px;
+}
+.cookReg .cookinfo .blank{
+    flex: 1;
+}
