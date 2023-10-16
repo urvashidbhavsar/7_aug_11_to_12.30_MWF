@@ -1,0 +1,45 @@
+@media (min-width:992px) {
+    .container{
+        margin:0px 65px;
+    }
+      /* ============================= */
+    .homepage .homep{
+        padding: 170px 0px;
+    }
+     /* ================= */
+    .learnSec .learnBox{
+        flex-direction: row;
+    }
+    /* ======================================  */
+    .courseSec .courseGrid{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .courseSec .gridbox3{
+        grid-row: unset;
+        grid-column: unset;
+        width: unset;
+        justify-self: unset;
+    }
+     /* ======================================= */
+    .featureSec .featureFlex{
+        display: flex;
+      flex-direction: row;
+    }
+    .featureSec .featureFlex img{
+        border-radius: 0 5px 5px 0;
+    }
+     /* =========================== */
+     .chefSec .chefDetails{
+        grid-template-columns: repeat(3,1fr);
+    }
+     .chefSec .gridbox3{
+          grid-row: unset;
+        grid-column: unset;
+        width: unset;
+        justify-self: unset;
+    }
+     /* =================== */
+    .cookReg .cookinfo{
+        flex-direction: row;
+    }
+}
