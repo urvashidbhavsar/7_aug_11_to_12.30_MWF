@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="msg()">Click</button> <br> <br>
+    <button ondblclick="msg()">double click</button>
+    <!-- onmousedown => pressed/click on an element -->
+    <!-- onmouseenter => mouse enter on an element / same as mousemove -->
+    <!-- onmouseleave => mouse move out from an element (parent element)-->
+    <!-- onmousemove => mouse move on element -->
+    <!-- onmouseout => mouse move out from element also work on child element -->
+    <!-- onmouseover => mouse move over an element and also work on child element  -->
+    <!--  onmouseup => when released mouse both button -->
+    <!-- onmousewheel => when used to scroll page using mouse wheel -->
+    <!-- oncontextmenu => click right button on mouse -->
+
+    <div style="border: 1px solid black; padding: 10px; " oncontextmenu="hoverContent()">
+        <p style="background-color: cadetblue;">
+            hover me!!!
+        </p>
+    </div>
+    <br>
+    <!-- onkeydown/ onkeypress => when press button perform task then we write -->
+    <!-- onkeypress => when press button print value than task perform -->
+    <!-- onblur => move out from input element -->
+    <div>
+        <input type="text" placeholder="enter value">
+    </div>
+
+    <script>
+        function msg() {
+            alert("hello user")
+        }
+        function hoverContent() {
+            alert("you hover on paragraph")
+        }
+        function inputText() {
+            alert("you enter any text")
+        }
+    </script>
+</body>
+
+</html>

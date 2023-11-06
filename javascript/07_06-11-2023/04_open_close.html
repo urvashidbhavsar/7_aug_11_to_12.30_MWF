@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- open() method used to open any website forcefully. -->
+    <button onclick="openpage()">open website</button>
+    <button onclick="closepage()">close website</button>
+
+    <script>
+        var openlink = "https://jsonplaceholder.typicode.com/"
+        var closelink;
+        function openpage() {
+            closelink = window.open(openlink, "_blank")
+        }
+        function closepage() {
+            // window.close()
+            closelink.window.close()
+        }
+    </script>
+</body>
+
+</html>
