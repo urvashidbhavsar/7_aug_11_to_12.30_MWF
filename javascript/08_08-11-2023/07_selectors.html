@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        document.getElementById("p1").innerText = "<b>Hello world</b>"
+        document.getElementById("p2").innerHTML = "<b>Hello world</b>"
+    </script>
+
+    <p class="mypara">Example 1</p>
+    <p class="mypara">Example 2</p>
+    <script>
+        let myclass = document.getElementsByClassName("mypara");
+        for (var i = 0; i < myclass.length; i++) {
+            myclass[i].style.color = "blue"
+        }
+    </script>
+</body>
+
+</html>
