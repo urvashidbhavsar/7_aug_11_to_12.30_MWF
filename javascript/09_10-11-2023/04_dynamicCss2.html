@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title1 {
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+        }
+
+        .title2 {
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: blue;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="addCssClass()">Add()</button>
+    <button onclick="removeCssClass()">Remove()</button>
+    <button onclick="toggleCssClass()">Toggle()</button>
+
+    <h1 class="heading1">Hello world</h1>
+    <h1 class="heading2">Hello world</h1>
+    <script>
+        function addCssClass() {
+            // let h1 = document.getElementById("heading1")
+            let h1 = document.querySelector(".heading1")
+            h1.classList.add("title1")
+        }
+        function removeCssClass() {
+            // let h1 = document.getElementById("heading1")
+            let h1 = document.querySelector(".heading1")
+            h1.classList.remove("title1")
+        }
+        function toggleCssClass() {
+            // let h1 = document.getElementById("heading2")
+            let h1 = document.querySelector(".heading2")
+            h1.classList.toggle("title2")
+        }
+    </script>
+</body>
+
+</html>

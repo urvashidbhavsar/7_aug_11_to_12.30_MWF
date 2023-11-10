@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        Enter Any Value :<input type="text" name="" id="inpval">
+        <button onclick="return UserInput()">click here</button>
+    </form>
+    <p id="disp"></p>
+
+    <script>
+        function UserInput() {
+            let input = document.getElementById("inpval").value;
+            document.getElementById("disp").innerHTML = input;
+            return false;
+        }
+    </script>
+</body>
+
+</html>

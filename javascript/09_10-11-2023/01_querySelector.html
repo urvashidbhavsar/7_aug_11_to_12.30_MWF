@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p class="myclass"></p>
+    <h6></h6>
+    <h6></h6>
+
+    <div class="mydiv">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <script>
+        document.querySelector("#p1").innerHTML = "id selection"
+        document.querySelector(".myclass").innerHTML = "class selection"
+        document.querySelector("h6").innerHTML = "element selector";
+
+        let mydiv = document.querySelector(".mydiv")
+        let box = mydiv.querySelectorAll(".box");
+        for (var i = 0; i < box.length; i++) {
+            box[i].innerHTML = "box selection"
+        }
+    </script>
+</body>
+
+</html>
