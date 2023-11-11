@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="addval">
+    <button onclick="addValue()">add in list</button>
+
+    <h4>List are : </h4>
+    <ul></ul>
+    <script>
+        function addValue() {
+            let val = document.getElementById("addval").value;
+            if (val == "") {
+                alert("Enter value")
+            } else {
+                let list = document.createElement("li");
+                let listText = document.createTextNode(val)
+                list.appendChild(listText);
+                document.querySelector("ul").append(list);
+                document.getElementById("addval").value = ""
+            }
+        }
+    </script>
+</body>
+
+</html>
