@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var table = {
+            color: "black",
+            brands: "cello",
+            price: "Rs.300",
+            DateOfMenuF: "20-11-2023",
+            "MobileNo": 8532433234,
+            "capacity": "200kg"
+        }
+        console.log(table);
+        document.write(table.price);
+        document.write(table.DateOfMenuF);
+
+        // use to print an object
+        var tbl;
+        for (tbl in table) {
+            console.log(tbl + " -> " + table[tbl]);
+        }
+
+        for (tbl in table) {
+            if (Object.hasOwnProperty.call(table, tbl)) {
+                console.log(tbl + " -> " + table[tbl]);
+            }
+        }
+    </script>
+</body>
+
+</html>
