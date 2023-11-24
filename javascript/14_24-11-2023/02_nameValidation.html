@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+
+        .borderErr {
+            border: 1px solid red;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label for="">Enter Name : </label>
+        <input type="text" name="" id="uname" onblur="return checkName()" onkeyup="return checkNameEx()">
+
+        <button type="submit" onclick="return checkName()">Submit</button>
+        <p id="msg"></p>
+    </form>
+
+    <script>
+        function checkName() {
+            let username = document.getElementById("uname");
+            if (username.value == "" || username.value == null) {
+                document.getElementById("msg").innerText = "Enter Name";
+                username.focus();
+                username.classList.add("borderErr")
+                return false;
+            }
+        }
+        function checkNameEx() {
+            let username = document.getElementById("uname");
+            let pattern = /^[a-zA-Z]*$/;
+            if (!(pattern.test(username.value))) {
+                document.getElementById("msg").innerText = "Enter Proper name";
+                return false
+            } else if (username.value.length < 2) {
+                document.getElementById("msg").innerText = "Name must be in 2 letters";
+                return false
+            } else {
+                document.getElementById("msg").innerText = "";
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>
