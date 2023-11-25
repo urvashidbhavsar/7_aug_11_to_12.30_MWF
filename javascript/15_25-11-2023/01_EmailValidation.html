@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label for="">Email</label>
+        <input type="text" name="" id="mail" onblur="return checkMail()" onkeyup="return checkEmailEx()">
+        <span id="msg"></span>
+        <br><br>
+        <button onclick="return checkMail()">click to check</button>
+    </form>
+    <script>
+        function checkMail() {
+            let mail = document.getElementById("mail")
+            if (mail.value == "" || mail.value == null) {
+                document.getElementById("msg").innerHTML = "Enter EMail"
+                mail.focus();
+                return false
+            }
+        }
+
+        function checkEmailEx() {
+            let mail = document.getElementById("mail");
+            let ex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            if (ex.test(mail.value)) {
+                document.getElementById("msg").innerHTML = "true"
+                return false;
+            } else {
+                document.getElementById("msg").innerHTML = "false"
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

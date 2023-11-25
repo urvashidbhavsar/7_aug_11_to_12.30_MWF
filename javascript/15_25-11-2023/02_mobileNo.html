@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label for="">Enter Mobile No : </label>
+        <input type="text" name="" id="mno" onblur="return checkMobile()" onkeyup="return checkMobileEx()"
+            maxlength="10">
+        <span id="msg"></span>
+        <br><br>
+
+        <button id="btn1" onclick="return checkMobile()">click here</button>
+    </form>
+    <script>
+        function checkMobile() {
+            let mobile = document.getElementById("mno");
+            if (mobile.value == "" || mobile.value == null) {
+                document.getElementById("msg").innerText = "Enter Mobile No";
+                mobile.focus()
+                return false
+            }
+        }
+        // let btn = document.getElementById("btn1")
+        // btn.addEventListener("click", checkMobile)
+        // keyboard event
+        function checkMobileEx() {
+            let mobile = document.getElementById("mno");
+            let ex = /^[0-9]*$/;
+            let start = /^[6-9]/
+            if (!(ex.test(mobile.value)) || !(start.test(mobile.value))) {
+                document.getElementById("msg").innerText = "Enter proper Number"
+                return false;
+            } else if (mobile.value.length < 10) {
+                document.getElementById("msg").innerText = "Enter 10 digits"
+                return false;
+            } else {
+                document.getElementById("msg").innerText = ""
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
