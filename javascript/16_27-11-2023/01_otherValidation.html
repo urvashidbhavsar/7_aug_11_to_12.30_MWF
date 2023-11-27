@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .msg {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <!-- radio button -->
+        <label for="">Payment with : </label>
+        <input type="radio" name="payment" id="pay1" onblur="return checkValidate() "> Debit Card
+        <input type="radio" name="payment" id="pay2"> Credit Card
+        <input type="radio" name="payment" id="pay3"> UPI
+        <span id="msg1" class="msg"></span>
+
+        <br><br>
+        <label for="">Languages : </label>
+        <input type="checkbox" name="ex1" id="lang1"> Gujarati
+        <input type="checkbox" name="ex2" id="lang2"> Hindi
+        <input type="checkbox" name="ex1" id="lang3"> English
+        <span class="msg" id="msg2"></span>
+
+        <br><br>
+        <label for="">city : </label>
+        <select name="" id="citylist">
+            <option value="-1">---select---</option>
+            <option value="">Surat</option>
+            <option value="">Baroda</option>
+        </select>
+        <span class="msg" id="msg3"></span>
+
+        <br><br>
+        <button onclick="return checkValidate()">click here</button>
+
+    </form>
+    <script>
+        function checkValidate() {
+            let p1 = document.getElementById("pay1").checked;
+            let p2 = document.getElementById("pay2").checked;
+            let p3 = document.getElementById("pay3").checked;
+
+            if (p1 == false && p2 == false && p3 == false) {
+                document.getElementById("msg1").innerHTML = "Select Option"
+                return false;
+            } else {
+                document.getElementById("msg1").innerHTML = ""
+                // return false;
+            }
+
+            let l1 = document.getElementById("lang1").checked;
+            let l2 = document.getElementById("lang2").checked;
+            let l3 = document.getElementById("lang3").checked;
+            if (l1 == false && l2 == false && l3 == false) {
+                document.getElementById("msg2").innerHTML = "Select Language"
+                return false;
+            } else {
+                document.getElementById("msg2").innerHTML = ""
+                // return false;
+            }
+
+            let list = document.getElementById("citylist").value;
+            if (list == "-1") {
+                document.getElementById("msg3").innerHTML = "Select City";
+                return false
+            } else {
+                document.getElementById("msg3").innerHTML = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field {
+            padding: 10px;
+        }
+
+        .msg {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="field">
+            <label for="fname">Firstname</label>
+            <input type="text" name="firstname" id="fname" onblur="return checkBlank(this, 'msg1')"
+                onkeyup="return nameExp(this, 'msg1')">
+            <span id="msg1" class="msg"></span>
+        </div>
+        <div class="field">
+            <label for="mname">Middlename</label>
+            <input type="text" name="middlename" id="mname" onblur="return checkBlank(this, 'msg2')"
+                onkeyup="return nameExp(this, 'msg2')">
+            <span id="msg2" class="msg"></span>
+        </div>
+        <div class="field">
+            <label for="lname">Lastname</label>
+            <input type="text" name="lastname" id="lname" onblur="return checkBlank(this, 'msg3')"
+                onkeyup="return nameExp(this, 'msg3')">
+            <span id="msg3" class="msg"></span>
+        </div>
+        <div class="field">
+            <button onclick="return nameCheck()">Check Name</button>
+        </div>
+    </form>
+
+    <script>
+        function nameCheck() {
+            let fn = document.getElementById("fname");
+            let mn = document.getElementById("mname");
+            let ln = document.getElementById("lname");
+            if (fn.value == "" || fn.value == null) {
+                document.getElementById("msg1").innerHTML = "Enter Firstname"
+                fn.focus();
+                return false;
+            }
+            if (mn.value == "" || mn.value == null) {
+                document.getElementById("msg2").innerHTML = "Enter Middlename"
+                mn.focus();
+                return false;
+            }
+            if (ln.value == "" || ln.value == null) {
+                document.getElementById("msg3").innerHTML = "Enter Lastname"
+                ln.focus();
+                return false;
+            }
+        }
+
+        function checkBlank(blank, msg) {
+            // let b = document.getElementById(blank);
+            if (blank.value == "" || blank.value == null) {
+                document.getElementById(msg).innerHTML = "Field should be not blank";
+                return false;
+            }
+        }
+
+        function nameExp(fcheck, msg) {
+            let pattern = /^[a-zA-Z]*$/
+            if (!(pattern.test(fcheck.value))) {
+                document.getElementById(msg).innerText = "Enter Proper name";
+                return false
+            } else if (fcheck.value.length < 2) {
+                document.getElementById(msg).innerText = "Name must be in 2 letters";
+                return false
+            } else {
+                document.getElementById(msg).innerText = "";
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>
