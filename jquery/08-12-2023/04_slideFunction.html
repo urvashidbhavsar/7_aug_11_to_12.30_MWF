@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 100px;
+            width: 100px;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- slide functions are : it is effected on element height
+        slideup, slidedown, slidetoggle
+    -->
+    <button id="btn1">slide up</button>
+    <button id="btn2">slide down</button>
+    <button id="btn3">slide toggle</button>
+
+    <hr>
+    <div class="div1"></div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".div1").slideUp(1000)
+            })
+            $("#btn2").click(function () {
+                $(".div1").slideDown(1000)
+            })
+            $("#btn3").click(function () {
+                $(".div1").slideToggle(1000)
+            })
+        })
+    </script>
+</body>
+
+</html>
