@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 300px;
+            width: 100px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">Call Back</button>
+    <!-- <h1>Hello user</h1> -->
+    <div class="div1"></div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                // $("h1").hide(2000, function () {
+                //     // alert("task completed")
+                //     $("h1").show()
+                // })
+                $(".div1").slideUp(2000, function () {
+                    $(".div1").slideDown(2000)
+                })
+            })
+            $(".div1").mouseover(function () {
+                $(".div1").stop()
+            })
+        })
+    </script>
+</body>
+
+</html>
