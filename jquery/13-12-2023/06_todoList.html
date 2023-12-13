@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        i {
+            padding-right: 10px;
+        }
+    </style>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <div>
+        <input type="text" name="" id="listval">
+        <button id="btn1">click to add</button>
+    </div>
+    <ul>
+    </ul>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $input = $("#listval").val();
+                $("ul").append("<li><i class='bi bi-arrow-bar-right'></i>" + $input + "</li>")
+                $("#listval").val("")
+            })
+        })
+    </script>
+</body>
+
+</html>
