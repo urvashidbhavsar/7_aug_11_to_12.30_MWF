@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            width: fit-content;
+            padding: 5px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- there is 4 functions => wrap(), wrapAll(), wrapInner(), unwrap() -->
+    <button id="btn1">wrap</button>
+
+    <div class="div1">My first div</div>
+    <div class="div1">My second div</div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".div1").wrap("<div class='mydiv'></div>")
+            })
+        })
+    </script>
+
+    <hr>
+    <button id="btn2">wrapAll</button>
+
+    <div class="div2">My first div</div>
+    <div class="div2">My second div</div>
+    <script>
+        $(function () {
+            $("#btn2").click(function () {
+                $(".div2").wrapAll("<div class='mydiv'></div>")
+            })
+        })
+    </script>
+
+    <hr>
+    <button id="btn3">wrapInner</button>
+
+    <div class="div3">My first div</div>
+    <div class="div3">My second div</div>
+    <script>
+        $(function () {
+            $("#btn3").click(function () {
+                $(".div3").wrapInner("<b><i></i></b>")
+            })
+        })
+    </script>
+
+    <hr>
+    <button id="btn4">unwrap</button>
+    <div class="mydiv">
+        <div class="div4">My first div</div>
+        <div class="div4">My second div</div>
+    </div>
+    <script>
+        $(function () {
+            $("#btn4").click(function () {
+                $(".div4").unwrap()
+            })
+        })
+    </script>
+</body>
+
+</html>
