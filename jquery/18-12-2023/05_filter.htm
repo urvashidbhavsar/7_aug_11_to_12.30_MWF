@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+
+        .mainBox {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .changebg {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <div class="mainBox">
+        <div class="box box1">box 1</div>
+        <div class="box box2">box 2</div>
+        <div class="box box3">box 3</div>
+        <div class="box box4">box 4</div>
+        <div class="box box5">box 5</div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // $(".box").filter(".box2").addClass("changebg");
+            // $(".box").first().addClass("changebg");
+            // $(".box").last().addClass("changebg");
+            // $(".box").eq(3).addClass("changebg");
+            $(".box").not(".box3").addClass("changebg");
+        })
+    </script>
+</body>
+
+</html>

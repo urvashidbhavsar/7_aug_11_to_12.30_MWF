@@ -1,0 +1,10 @@
+traversing means move through any element in DOM tree.
+
+in traversing,
+(1) ancestor(parent) => parent(), parents(), parentsUntil()
+
+(2) decendent(child) => children(), find()
+
+(3) siblings(similar) => siblings(), next(), nextAll(), nextUntil(), prev(), prevAll(), prevUntil()
+
+(4) filter(searching) => filter(), first(), last(), eq(), not()
