@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ajax means asyncronised javascript and XML
+        XML = extensible markup language 
+
+        use to load external file without reload current page.
+        external file : any file you can loadded.
+        if we load pdf take a iframe or embed tag
+    -->
+    <button id="btn1">click here</button>
+    <h1></h1>
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        // ajax run on live server
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("h1").load("data.txt")
+            })
+        })
+    </script>
+</body>
+
+</html>

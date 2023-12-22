@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .mainDiv {
+            height: 300px;
+            width: 300px;
+            margin-top: 150px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .square {
+            position: relative;
+        }
+
+        .move {
+            height: 60px;
+            width: 60px;
+            background-color: teal;
+        }
+
+        .left {
+            position: absolute;
+            transform: rotate(45deg);
+            top: 131px;
+            left: 78px;
+            animation: leftMove 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 1s infinite alternate;
+        }
+
+        .top {
+            position: absolute;
+            transform: rotate(45deg);
+            top: 89px;
+            left: 120px;
+            animation: topMove 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 1s infinite alternate;
+        }
+
+        .bottom {
+            position: absolute;
+            transform: rotate(45deg);
+            top: 173px;
+            left: 120px;
+            animation: BottomMove 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 1s infinite alternate;
+        }
+
+        .right {
+            position: absolute;
+            transform: rotate(45deg);
+            top: 131px;
+            right: 78px;
+            animation: rightMove 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 1s infinite alternate;
+        }
+
+        .title {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            text-align: center;
+            color: gray;
+        }
+
+        @keyframes leftMove {
+            0% {
+                left: 78px;
+            }
+
+            100% {
+                left: 20px;
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes topMove {
+            0% {
+                top: 89px;
+            }
+
+            100% {
+                top: 31px;
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rightMove {
+            0% {
+                right: 78px;
+            }
+
+            100% {
+                right: 20px;
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes BottomMove {
+            0% {
+                top: 173px;
+            }
+
+            100% {
+                top: 231px;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="square">
+            <div class="move left"></div>
+            <div class="move top"></div>
+            <div class="move bottom"></div>
+            <div class="move right"></div>
+        </div>
+    </div>
+    <div class="title">Loading...</div>
+
+</body>
+
+</html>
